@@ -9,24 +9,9 @@
   </tr>
 </table>
 
-<table>
-  <tr>
-    <td width="50%">
-      <img src="https://raw.githubusercontent.com/nicholasxdavis/mottomusic/main/docs/player.png" alt="Motto player" width="100%" />
-    </td>
-    <td width="50%">
-      <img src="https://raw.githubusercontent.com/nicholasxdavis/mottomusic/main/docs/lyrics.png" alt="Motto lyrics" width="100%" />
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <img src="https://raw.githubusercontent.com/nicholasxdavis/mottomusic/main/docs/queue.png" alt="Motto queue" width="100%" />
-    </td>
-    <td width="50%">
-      <img src="https://raw.githubusercontent.com/nicholasxdavis/mottomusic/main/docs/studio.png" alt="Motto studio" width="100%" />
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nicholasxdavis/mottomusic/main/assets/motto.gif" alt="Motto demo" width="600" />
+</p>
 
 ## Run
 
@@ -81,3 +66,22 @@ The logo at the bottom right opens Player, Studio, Queue, and Management.
 Studio is the sound rack: gain, bass, mid, air, boost, drive, cut, pitch, room, echo, and punch.
 
 Queue is what plays next. Drag a row to reorder it.
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="https://raw.githubusercontent.com/nicholasxdavis/mottomusic/main/docs/player.png" alt="Motto player" width="100%" />
+    </td>
+    <td width="50%">
+      <img src="https://raw.githubusercontent.com/nicholasxdavis/mottomusic/main/docs/lyrics.png" alt="Motto lyrics" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="https://raw.githubusercontent.com/nicholasxdavis/mottomusic/main/docs/queue.png" alt="Motto queue" width="100%" />
+    </td>
+    <td width="50%">
+      <img src="https://raw.githubusercontent.com/nicholasxdavis/mottomusic/main/docs/studio.png" alt="Motto studio" width="100%" />
+    </td>
+  </tr>
+</table>
