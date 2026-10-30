@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <clipPath id="c"><circle cx="500" cy="500" r="478"/></clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <circle cx="500" cy="500" r="478" fill="#000"/>
+    
+    <circle cx="500" cy="500" r="428" fill="none" stroke="#fff" stroke-width="28" stroke-dasharray="148 58" transform="rotate(16 500 500)"/>
+    <g transform="translate(323.48 508.00) rotate(0) scale(0.14577) translate(-472.00 809.50)"><path d="M932 -1619V-1295H682V0H261V-1295H12V-1619Z" fill="#fff"/></g>
+    <g transform="translate(441.26 508.00) rotate(0) scale(0.14577) translate(-295.00 809.50)"><path d="M505 -1619V0H84V-1619Z" fill="#fff"/></g>
+    <g transform="translate(533.23 508.00) rotate(0) scale(0.14577) translate(-295.00 809.50)"><path d="M505 -1619V0H84V-1619Z" fill="#fff"/></g>
+    <g transform="translate(663.76 508.00) rotate(0) scale(0.14577) translate(-559.50 809.50)"><path d="M1046 -671Q1046 -427 1034.5 -325.5Q1023 -224 962.5 -140.0Q902 -56 799.0 -11.0Q696 34 559 34Q429 34 325.5 -8.5Q222 -51 159.0 -136.0Q96 -221 84.0 -321.0Q72 -421 72 -671V-948Q72 -1192 83.5 -1293.5Q95 -1395 155.5 -1479.0Q216 -1563 319.0 -1608.0Q422 -1653 559 -1653Q689 -1653 792.5 -1610.5Q896 -1568 959.0 -1483.0Q1022 -1398 1034.0 -1298.0Q1046 -1198 1046 -948ZM625 -1203Q625 -1316 612.5 -1347.5Q600 -1379 561 -1379Q528 -1379 510.5 -1353.5Q493 -1328 493 -1203V-447Q493 -306 504.5 -273.0Q516 -240 558 -240Q601 -240 613.0 -278.0Q625 -316 625 -459Z" fill="#fff"/></g>
+    <line x1="232" y1="232" x2="768" y2="768" stroke="#000" stroke-width="70" stroke-linecap="square"/>
+    <line x1="232" y1="232" x2="768" y2="768" stroke="#fff" stroke-width="30" stroke-linecap="square"/>
+    
+  </g>
+</svg>

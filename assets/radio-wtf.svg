@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <clipPath id="c"><circle cx="500" cy="500" r="478"/></clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <circle cx="500" cy="500" r="478" fill="#000"/>
+
+    <!-- tuner dial -->
+    <circle cx="500" cy="500" r="454" fill="none" stroke="#fff" stroke-width="40" stroke-dasharray="14 65.24" transform="rotate(-90 500 500)"/>
+    <circle cx="500" cy="500" r="454" fill="none" stroke="#fff" stroke-width="58" stroke-dasharray="18 219.71" transform="rotate(-90 500 500)"/>
+
+    <!-- bezel -->
+    <circle cx="500" cy="500" r="408" fill="none" stroke="#fff" stroke-width="14"/>
+    <circle cx="500" cy="500" r="382" fill="none" stroke="#fff" stroke-width="8" stroke-dasharray="26 18" transform="rotate(18 500 500)"/>
+
+    <!-- antenna -->
+    <g fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M500 176 V248" stroke-width="16" fill="none"/>
+      <circle cx="500" cy="158" r="20"/>
+      <path d="M500 198 L442 132 M500 198 L558 132" stroke-width="14" fill="none"/>
+    </g>
+
+    <!-- broadcast waves -->
+    <g fill="none" stroke="#fff" stroke-linecap="round">
+      <path d="M286 400 A98 108 0 0 0 286 600" stroke-width="20"/>
+      <path d="M244 368 A140 150 0 0 0 244 632" stroke-width="16"/>
+      <path d="M204 338 A180 188 0 0 0 204 662" stroke-width="13"/>
+      <path d="M714 400 A98 108 0 0 1 714 600" stroke-width="20"/>
+      <path d="M756 368 A140 150 0 0 1 756 632" stroke-width="16"/>
+      <path d="M796 338 A180 188 0 0 1 796 662" stroke-width="13"/>
+    </g>
+
+    <!-- spark -->
+    <path fill="#fff" d="M500 262 L516 308 L564 322 L516 336 L500 382 L484 336 L436 322 L484 308 Z"/>
+
+    <!-- WTF + lightning -->
+    <g transform="translate(492 548) rotate(-8) scale(0.82)" fill="#fff">
+      <path d="M-236 36 L-202 -208 L-154 -208 L-116 -28 L-78 -208 L-30 -208 L4 36 L-42 36 L-62 -92 L-100 36 L-132 36 L-170 -92 L-190 36 Z"/>
+      <path d="M20 -208 H136 V-154 H92 V36 H64 V-154 H20 Z"/>
+      <path d="M152 -208 H270 V-154 H200 V-96 H256 V-48 H200 V36 H152 Z"/>
+      <path d="M300 -220 L248 -20 L292 -20 L214 110 L348 -70 L300 -70 L356 -220 Z"/>
+    </g>
+
+    <!-- speaker grille -->
+    <g fill="#fff">
+      <rect x="412" y="708" width="176" height="20" rx="10"/>
+      <rect x="384" y="748" width="232" height="20" rx="10"/>
+      <rect x="412" y="788" width="176" height="20" rx="10"/>
+    </g>
+  </g>
+</svg>

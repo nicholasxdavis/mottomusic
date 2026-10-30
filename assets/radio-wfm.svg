@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <clipPath id="c"><circle cx="500" cy="500" r="478"/></clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <circle cx="500" cy="500" r="478" fill="#000"/>
+    
+    <circle cx="500" cy="500" r="450" fill="none" stroke="#fff" stroke-width="20"/>
+    <circle cx="500" cy="500" r="412" fill="none" stroke="#fff" stroke-width="7"/>
+    <g transform="translate(292.89 470.00) rotate(0) scale(0.11733) translate(-966.50 733.00)"><path d="M357 0 7 -1466H310L531 -459L799 -1466H1151L1408 -442L1633 -1466H1931L1575 0H1261L969 -1096L678 0Z" fill="#fff"/></g>
+    <g transform="translate(513.32 470.00) rotate(0) scale(0.11733) translate(-625.50 733.00)"><path d="M151 0V-1466H1156V-1218H447V-871H1059V-623H447V0Z" fill="#fff"/></g>
+    <g transform="translate(720.42 470.00) rotate(0) scale(0.11733) translate(-853.00 733.00)"><path d="M145 0V-1466H588L854 -466L1117 -1466H1561V0H1286V-1154L995 0H710L420 -1154V0Z" fill="#fff"/></g>
+    <rect x="378" y="640" width="46" height="72" rx="14" fill="#fff"/>
+    <rect x="477" y="608" width="46" height="104" rx="14" fill="#fff"/>
+    <rect x="576" y="640" width="46" height="72" rx="14" fill="#fff"/>
+    
+  </g>
+</svg>

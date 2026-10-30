@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <title>Motto</title>
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="vendor/phosphor-fill/style.css" />
+  <link rel="stylesheet" href="vendor/phosphor-regular/style.css" />
+  <link rel="stylesheet" href="css/app.css?v=115" />
+</head>
+<body class="panel-lyrics no-lyrics auth-pending">
+  <div id="login-gate" class="login-gate" hidden>
+    <form id="login-form" class="login-form" autocomplete="on" onsubmit="event.preventDefault()">
+      <h1 class="login-title">Sign in to Motto</h1>
+      <input type="email" id="login-email" class="login-input" placeholder="Email" autocomplete="email" required />
+      <input type="password" id="login-pin" class="login-input" placeholder="PIN" inputmode="numeric" autocomplete="current-password" required />
+      <label class="login-remember">
+        <input type="checkbox" id="login-remember" />
+        <span class="login-remember-ui" aria-hidden="true"></span>
+        <span class="login-remember-label">Remember me</span>
+      </label>
+      <p id="login-error" class="login-error" role="alert"></p>
+      <button type="button" class="login-submit" id="login-submit">Sign in</button>
+    </form>
+    <img class="login-logo" src="assets/logo.png" width="36" height="36" alt="Motto" />
+  </div>
+  <div id="setup-gate" class="login-gate" hidden>
+    <form id="setup-form" class="login-form" autocomplete="off" onsubmit="event.preventDefault()">
+      <h1 class="login-title" id="setup-title">Hello, welcome to Motto</h1>
+      <p class="login-lead" id="setup-lead">Your music stays on this computer.</p>
+      <div id="setup-body"></div>
+      <p id="setup-error" class="login-error" role="alert"></p>
+      <button type="button" class="login-submit" id="setup-next">Continue</button>
+      <button type="button" class="login-text" id="setup-back" hidden>Back</button>
+    </form>
+    <img class="login-logo" src="assets/logo.png" width="36" height="36" alt="Motto" />
+  </div>
+  <div class="ambiance" id="ambiance" aria-hidden="true">
+    <div class="ambiance-wash"></div>
+    <div class="ambiance-grain"></div>
+  </div>
+  <div class="brand-dock" id="brand-dock">
+    <nav class="panel-tabs" role="tablist" aria-label="Panel">
+      <button type="button" class="panel-tab on" role="tab" data-tab="lyrics" aria-selected="true">Player</button>
+      <button type="button" class="panel-tab" role="tab" data-tab="studio" aria-selected="false">Studio</button>
+      <button type="button" class="panel-tab" role="tab" data-tab="queue" aria-selected="false">Queue</button>
+      <button type="button" class="panel-tab" role="tab" data-tab="management" aria-selected="false">Management</button>
+      <button type="button" class="panel-tab" data-action="signout">Sign Out</button>
+    </nav>
+    <img class="brand-ip" src="assets/logo.png" width="36" height="36" alt="Motto" />
+  </div>
+  <main class="stage">
+    <div class="stage-stack">
+    <div class="cover-wrap">
+    <div class="cover" id="cover">
+      <div class="cover-ph" id="cover-ph">
+        <img class="cover-ip" id="cover-ip" src="assets/logo.png" alt="" />
+      </div>
+      <img id="cover-img" alt="" hidden />
+    </div>
+    <button type="button" class="lyrics-toggle" id="lyrics-toggle" aria-expanded="false">Lyrics</button>
+    </div>
+    <div class="side-panel" id="side-panel">
+      <div class="panel-body">
+        <div class="panel-pane on" id="panel-lyrics" role="tabpanel">
+          <div class="lyrics-spot" aria-hidden="true"></div>
+          <div class="lyrics" id="lyrics">
+            <p class="lyrics-empty">lyrics go here</p>
+          </div>
+        </div>
+        <div class="panel-pane" id="panel-studio" role="tabpanel" hidden>
+          <div class="studio" id="studio"></div>
+        </div>
+        <div class="panel-pane" id="panel-queue" role="tabpanel" hidden>
+          <div class="queue" id="queue"></div>
+        </div>
+        <div class="panel-pane" id="panel-management" role="tabpanel" hidden>
+          <div class="mgmt" id="management"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <footer class="player">
+    <div class="track-meta">
+      <h1 class="track-title" id="track-title">title goes here</h1>
+      <p class="track-artist" id="track-artist">artist goes here</p>
+    </div>
+    <div class="player-wrap">
+      <div class="player-core">
+        <div class="radio-side">
+          <button type="button" class="radio-btn" id="btn-random" data-radio="shuffle" aria-label="Shuffle" aria-pressed="false">
+            <span class="radio-face"><i class="ph-fill ph-shuffle"></i></span>
+          </button>
+          <button type="button" class="radio-btn radio-slot" data-radio="radio" aria-label="Self Radio" aria-pressed="false" title="Self Radio">
+            <span class="radio-icon"><img src="assets/radio-icon.svg" alt="" /></span>
+          </button>
+          <button type="button" class="radio-btn radio-slot" data-radio="tiio" aria-label="Worldwide FM" aria-pressed="false" title="Worldwide FM">
+            <span class="radio-icon radio-art"><img src="assets/Worldwide_FM_print.webp" alt="" /></span>
+          </button>
+        </div>
+        <div class="transport">
+          <button type="button" class="ctrl" id="btn-prev" aria-label="Previous">
+            <i class="ph-fill ph-skip-back"></i>
+          </button>
+          <button type="button" class="ctrl play" id="btn-play" aria-label="Play">
+            <i class="ph-fill ph-play" id="play-icon"></i>
+          </button>
+          <button type="button" class="ctrl" id="btn-next" aria-label="Next">
+            <i class="ph-fill ph-skip-forward"></i>
+          </button>
+        </div>
+        <div class="radio-side">
+          <button type="button" class="radio-btn radio-slot" data-radio="kult" aria-label="k.u.l.t" aria-pressed="false" title="k.u.l.t">
+            <span class="radio-icon radio-art"><img src="assets/01cf0-16081939853251-800.webp" alt="" /></span>
+          </button>
+          <button type="button" class="radio-btn radio-slot" data-radio="motto" aria-label="Motto Radio" aria-pressed="false" title="Motto Radio">
+            <span class="radio-icon radio-motto"><img src="assets/ip/motto-ip.png" alt="" /></span>
+          </button>
+          <div class="search-dropdown" id="search-dropdown">
+            <button type="button" class="radio-btn" id="btn-search" aria-label="Search" aria-expanded="false" aria-haspopup="listbox">
+              <span class="radio-face"><i class="ph ph-magnifying-glass"></i></span>
+            </button>
+            <div id="search-panel" class="search-panel" role="listbox" aria-label="Search">
+              <div class="search-head">
+                <div class="search-field">
+                  <i class="ph ph-magnifying-glass"></i>
+                  <input id="search-input" type="search" placeholder="Search" autocomplete="off" spellcheck="false" />
+                </div>
+              </div>
+              <div id="search-results" class="search-results"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="player-scrub">
+        <div class="timeline">
+          <span class="time" id="time-cur">00:00</span>
+          <div class="seek" id="seek-track">
+            <div class="seek-fill" id="seek-fill"></div>
+          </div>
+          <span class="time" id="time-end">00:00</span>
+        </div>
+        <div class="player-volume">
+          <button type="button" class="vol-mute" id="vol-mute" aria-label="Mute" aria-pressed="false">
+            <i class="ph ph-speaker-high vol-icon" aria-hidden="true"></i>
+          </button>
+          <input type="range" class="vol-slider" id="vol-slider" min="0" max="150" value="100" aria-label="Volume" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/howler.min.js"></script>
+  <script type="module" src="js/app.js?v=86"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+# =============================================================================
+# Motto. Safe for a public repo: code and assets only.
+# Your music library stays on disk; these rules only affect what gets committed.
+# =============================================================================
+
+# Secrets and local sign-in
+.env
+.env.*
+!.env.example
+config/auth.json
+config/settings.json
+config/radio.json
+
+# Dependencies & build junk
+node_modules/
+dist/
+build/
+*.log
+
+# Python (import/download tools)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / editor noise
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Local video / motion experiments (Hyperframes)
+.development/
+
+# -----------------------------------------------------------------------------
+# Local music library (MP3s, covers, import manifests, download state, lyrics)
+# -----------------------------------------------------------------------------
+music/*
+!music/.gitkeep
+!music/import/
+music/import/*
+!music/import/.gitkeep
+!music/inbox/
+music/inbox/*
+!music/inbox/.gitkeep
+
+# Catch any stray audio under the repo (outside music/)
+*.mp3
+*.flac
+*.m4a
+*.aac
+*.ogg
+*.opus
+*.wav
+*.aiff
+*.aif
+*.wma
+
+# Lyric files, wherever they sit
+*.lrc
+
+# Station art uploaded from the app
+assets/stations/
+
+# Unused local art
+assets/images.png
+
+# Personal import lists and the scripts that fetch music.
+# Left on this PC. Not part of the public player.
+tools/*config.json
+tools/download_tracks.py
+tools/download_comehelpglo.py
+tools/fetch_comehelpglo_covers.mjs
+tools/fetch_comehelpglo_lyrics.mjs
+tools/gather_metadata.py
+tools/gap_report.py
+tools/organize_library.py

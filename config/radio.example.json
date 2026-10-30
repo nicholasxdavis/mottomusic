@@ -1,0 +1,40 @@
+{
+  "stations": {
+    "shuffle": {
+      "label": "Shuffle",
+      "mode": "shuffle",
+      "filter": "all"
+    },
+    "radio": {
+      "label": "Self Radio",
+      "icon": "assets/radio-icon.svg",
+      "mode": "shuffle",
+      "filter": "self"
+    },
+    "tiio": {
+      "label": "Worldwide FM",
+      "icon": "assets/Worldwide_FM_print.webp",
+      "mode": "shuffle",
+      "filter": "tiio"
+    },
+    "kult": {
+      "label": "k.u.l.t",
+      "icon": "assets/01cf0-16081939853251-800.webp",
+      "mode": "shuffle",
+      "filter": "kult"
+    },
+    "motto": {
+      "label": "Motto Radio",
+      "icon": "assets/ip/motto-ip.png",
+      "mode": "shuffle",
+      "filter": "motto"
+    }
+  },
+  "self_artists": [],
+  "tiio_artists": [],
+  "kult_artists": [],
+  "motto_artists": [],
+  "motto_tracks": [],
+  "excluded_artists": [],
+  "energy_artists": []
+}
