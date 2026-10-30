@@ -1,27 +1,29 @@
 <table>
   <tr>
-    <td width="88" valign="middle"><img src="assets/logo.png" alt="Motto" width="72"></td>
-    <td valign="middle">
-      <h1>Motto</h1>
-      <p>A music player that runs on your computer. Your songs stay in this folder. Anyone who clones the repo adds their own music.</p>
+    <td width="100">
+      <img src="https://raw.githubusercontent.com/nicholasxdavis/mottomusic/main/assets/logo.png" alt="Motto logo" width="80" />
+    </td>
+    <td>
+      <strong>Motto</strong> is a music player that runs on your computer. Your songs stay in this folder. Anyone who clones the repo adds their own music.
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="https://raw.githubusercontent.com/nicholasxdavis/mottomusic/main/docs/player.png" alt="Motto player" width="100%" />
+    </td>
+    <td width="50%">
+      <img src="https://raw.githubusercontent.com/nicholasxdavis/mottomusic/main/docs/lyrics.png" alt="Motto lyrics" width="100%" />
     </td>
   </tr>
   <tr>
-    <td colspan="2">
-      <table width="100%">
-        <tr>
-          <td width="25%"><img src="docs/player.png" alt="Playing" width="100%"></td>
-          <td width="25%"><img src="docs/lyrics.png" alt="Lyrics" width="100%"></td>
-          <td width="25%"><img src="docs/queue.png" alt="Queue" width="100%"></td>
-          <td width="25%"><img src="docs/studio.png" alt="Studio" width="100%"></td>
-        </tr>
-        <tr>
-          <td align="center">Player</td>
-          <td align="center">Lyrics</td>
-          <td align="center">Queue</td>
-          <td align="center">Studio</td>
-        </tr>
-      </table>
+    <td width="50%">
+      <img src="https://raw.githubusercontent.com/nicholasxdavis/mottomusic/main/docs/queue.png" alt="Motto queue" width="100%" />
+    </td>
+    <td width="50%">
+      <img src="https://raw.githubusercontent.com/nicholasxdavis/mottomusic/main/docs/studio.png" alt="Motto studio" width="100%" />
     </td>
   </tr>
 </table>
