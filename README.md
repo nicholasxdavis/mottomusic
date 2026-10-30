@@ -81,17 +81,3 @@ The logo at the bottom right opens Player, Studio, Queue, and Management.
 Studio is the sound rack: gain, bass, mid, air, boost, drive, cut, pitch, room, echo, and punch.
 
 Queue is what plays next. Drag a row to reorder it.
-
-## What stays on your computer
-
-These files are listed in `.gitignore`. A public copy of the repo does not include them:
-
-- `music/`, your songs, covers, and lyric files
-- `.env`, if you create one
-- `config/auth.json`, your sign-in
-- `config/settings.json`, your preferences
-- `config/radio.json`, your stations and artist lists
-
-If `config/radio.json` is missing, the server copies `config/radio.example.json` once and leaves it empty. A file that is already there is left alone.
-
-Copy `.env.example` to `.env` if you want the server to know an email and PIN from a file. The first-run screen can set this up on its own.
